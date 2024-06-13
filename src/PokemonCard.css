@@ -1,0 +1,20 @@
+.card {
+    width: 200px;
+    padding: 1em;
+    background-color: lightgreen;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+    color: rgb(235, 255, 175);
+    font-size: 1.6rem;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(36, 36, 36);
+}
+
+.img_box {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    border-radius: inherit;
+    box-shadow: inherit;
+}
