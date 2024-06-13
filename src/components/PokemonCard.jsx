@@ -1,20 +1,17 @@
 function PokemonCard() {
-  const pokemon = pokemonList[1];
+  const pokemon = pokemonList[0];
   console.log(pokemon);
-
-  let imgSrc;
-  if (pokemon.imgSrc) {
-    imgSrc = pokemon.imgSrc;
-  } else {
-    // imgSrc = "https://via.placeholder.com/150?text=?";
-    <p>?</p>;
-  }
 
   return (
     <div>
       PokemonCard
       <figure className="card">
-        <img className="img_box" src={imgSrc} alt={pokemon.name} />
+        {pokemon.imgSrc ? (
+          <img className="img_box" src={pokemon.imgSrc} alt={pokemon.name} />
+        ) : (
+          <p>?</p>
+        )}
+
         <figcaption>{pokemon.name}</figcaption>
       </figure>
     </div>
